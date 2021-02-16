@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="my-container1">
+        <h1>Challenge 1 : Your Age In Days</h1>
+    <div>
+        <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>  <button class="btn btn-danger" onclick="sweep()"> Reset</button>
+    </div>
+    <div id="display-result">
+
+    </div>
+    </div>
+
+    <div class="my-container2">
+        <h1>Challenge 2 : Generate a Cat</h1>
+        <button class="btn btn-success" onclick="generateCat()">Generate Cat</button>
+        <div class="flex-box" id="cat-container">
+
+        </div>
+     </div>
+
+     <div class="my-container3">
+        <h1>Challenge 3 : rock paper scissor</h1>
+        <button class="btn btn-dark" id="rps-reset-btn" onclick="reset_rps()" >Reset</button>
+        <div class="rps-flex-box" id="rps-box">
+            <img src="https://media.gettyimages.com/photos/limestone-picture-id170215830?s=2048x2048" alt="" height="150px" width="150px" onclick='rpsfun(this)' id="rock">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/4/2019/09/GettyImages-1128879610-c-fbbc77f.jpg?webp=true&quality=90&resize=940%2C399" alt="" height="150px" width="150px" onclick="rpsfun(this)" id="paper">
+            <img src="https://media.gettyimages.com/photos/hand-holding-scissors-picture-id184881679?s=2048x2048" alt="" height="150px" width="150px" onclick="rpsfun(this)" id="scissors">
+        </div>
+     </div>
+
+     <div class="my-container4">
+         <h1>Challenge 4 : Change The Color of All Buttons</h1>
+         <div class="flex-box">
+             <form action="">
+                 <select name="backdrop" id="backdrop" onchange="changeColor(this)">
+                     <option value="Random">Random</option>
+                     <option value="Red">Red</option>
+                     <option value="Green">Green</option>
+                     <option value="Reset">Reset</option>
+                 </select>
+             </form>
+             <button class="btn btn-danger">Wee!</button>
+             <button class="btn btn-primary">Yahoo!</button>
+             <button class="btn btn-warning">Bing!</button>
+             <button class="btn btn-success">Google!</button>
+
+         </div>
+     </div>
+
+     <div class="my-container5">
+         <h1>Challenge 5 : Black Jack</h1>
+         <h3><span id="blackjack-result">Lets Play!!!</span></h3>
+        <div class="flexbox-bj-row-1">
+            <div id="your-box">
+                <h2>You : <span id="your-bj-score">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer : <span id="dealer-bj-score">0</span></h2>
+            </div>
+        </div>
+        <div class="flexbox-bj-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="bj-hit">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="bj-stand">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="bj-deal">Deal</button>
+            </div>
+        </div>
+        <div class="flexbox-bj-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr> 
+            </table>
+        </div>
+     </div>
+    <script src="index.js"></script>
+</body>
+</html>

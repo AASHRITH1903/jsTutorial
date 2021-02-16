@@ -1,0 +1,77 @@
+.flex-box,.rps-flex-box,.flexbox-bj-row-1,.flexbox-bj-row-2,.flexbox-bj-row-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flexbox-bj-row-1{
+background: url('http://casinoblackjackplay.com//img/best_table_games_in_northwest_las.jpg');
+color: aqua;
+}
+
+.flexbox-bj-row-1 div{
+    border:1px solid black;
+    text-align: center;
+    height: 350px;
+    flex: 1;
+}
+
+.flexbox-bj-row-1 img{
+    width: 25%;
+    padding: 10px;
+}
+
+.flexbox-bj-row-2{
+    background: url('https://image.shutterstock.com/image-photo/poker-table-felt-background-green-260nw-583060111.jpg');
+}
+
+.flexbox-bj-row-2 div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.flexbox-bj-row-3{
+    background: url('https://image.shutterstock.com/image-vector/red-abstract-background-vector-600w-226520290.jpg');
+    color: aliceblue;
+}
+
+table,th,td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.flex-box img{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+}
+
+.my-container1,.my-container2,.my-container3,.my-container4,.my-container5{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+.rps-flex-box img{
+    margin: 25px auto;
+}
+
+.rps-flex-box img:hover{
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
+
+.my_box img{
+    height: 150px;
+    width: 150px;
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
+
+.bot_box img{
+    height: 150px;
+    width: 150px;
+    box-shadow: 0px 10px 50px rgba(255, 0, 0, 1);
+}
